@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List | Odin Project</title>
+</head>
+<body>
+    <header>
+        <div id="profile">
+            <h1>OneList</h1>
+            <img src="./img/format-list-checks.svg" alt="logo">
+        </div>
+
+        <button id="add-task" class="add"></button>
+    </header>
+
+    <main>
+        <div id="projects">
+            <!-- <h1>Projects</h1>
+            <div class="project">
+                <div class="project-container">
+                    <img src="./img/folder.svg" alt="folder-icon">
+                    <p>Default</p>
+                </div>
+                <div class="buttons">
+                    <button id="view-project" class="view"></button>
+                    <button id="delete-project" class="delete"></button>
+                </div>
+            </div>
+            <button id="add-project" class="add"></button> -->
+        </div>
+
+        <div id="tasks">
+            <!-- <div class="task high">
+                <div class="details">
+                    <p>Name</p>
+                    <input type="date" value="2005-08-01" readonly>
+                </div>
+                <div class="buttons">
+                    <button id="view-more" class="view"></button>
+                    <button id="delete-task" class="delete"></button>
+                </div>
+            </div> -->
+        </div>
+
+        <div id="details">
+            <!-- <h1>Details</h1>
+            <div class="task-details">
+                <p>Name</p>
+                <div class="due-date">
+                    <label for="due-date">Due Date</label>
+                    <input type="date" value="2005-08-01" name="due-date" id="due-date" readonly>
+                </div>
+                <p>Description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum inventore aperiam illum, rerum magni iusto, hic modi quibusdam, et culpa tempore. Expedita aliquid provident dignissimos rerum unde aut culpa veritatis?</p>
+                <p>Priority: <span class="high-priority">High</span></p>
+                <p>Project: Default</p>
+            </div> -->
+        </div>
+    </main>
+
+    <dialog id="create-task">
+        <form action="/placeholder" method="post">
+            <div class="form-container">
+                <label for="name">Task Name</label>
+                <input type="text" name="name" id="name" placeholder="one">
+            </div>
+
+            <div class="form-container">
+                <label for="date">Due Date</label>
+                <input type="date" name="date" id="date" placeholder="2005-08-01">
+            </div>
+
+            <div class="form-container">
+                <label for="description">Task Description</label>
+                <textarea name="description" id="description" placeholder="rule the world"></textarea>
+            </div>
+
+            <div class="form-container">
+                <p>Priority</p>
+                <div class="radios">
+                    <input type="radio" name="priority" id="high-priority" value="high">
+                    <input type="radio" name="priority" id="medium-priority" value="medium">
+                    <input type="radio" name="priority" id="low-priority" value="low">
+                </div>
+            </div>
+
+            <div class="form-container">
+                <p>Project</p>
+                <select name="project-input" id="project-input">
+                    <!--The options will be dynamically presented according to available projects-->
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </dialog>
+
+    <dialog id="edit-task">
+        <form action="/placeholder" method="post">
+            <div class="form-container">
+                <label for="name">Task Name</label>
+                <input type="text" name="name" id="name" placeholder="one" required>
+            </div>
+
+            <div class="form-container">
+                <label for="date">Due Date</label>
+                <input type="date" name="date" id="date" placeholder="2005-08-01" required> 
+            </div>
+
+            <div class="form-container">
+                <label for="description">Task Description</label>
+                <textarea name="description" id="description" placeholder="rule the world"required></textarea>
+            </div>
+
+            <div class="form-container">
+                <p>Priority</p>
+                <div class="radios">
+                    <input type="radio" name="priority" id="high-priority" value="high">
+                    <input type="radio" name="priority" id="medium-priority" value="medium">
+                    <input type="radio" name="priority" id="low-priority" value="low" checked>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </dialog>
+
+    <dialog id="create-project">
+        <form action="/placeholder" method="post">
+            <label for="project-name">Project Name</label>
+            <input type="text" name="project-name" id="project-name" maxlength="10" required>
+            <button type="submit">Submit</button>
+        </form>
+    </dialog>
+</body>
+</html>
